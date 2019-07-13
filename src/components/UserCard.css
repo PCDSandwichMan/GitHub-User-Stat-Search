@@ -1,5 +1,5 @@
 .container-card {
-  background: linear-gradient(#2003c760, #2103C7),
+  background: linear-gradient(#2003c760, #2103c7),
     url(../images/github-card-background.png) no-repeat 0px -25px fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -22,8 +22,8 @@ form {
 input[type='text'] {
   width: 100%;
   overflow: hidden;
-  line-height: 3.5rem;
-  font-size: 2.5rem;
+  line-height: 3.7rem;
+  font-size: 2rem;
   outline: none;
   text-align: center;
   border: #333 1px solid;
@@ -34,10 +34,12 @@ input[type='text']::placeholder {
   color: #000000ab;
 }
 
-.contianer-allInfo {
+.container-allInfo {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   height: 90%;
+  overflow: hidden;
 }
 
 #personal-info {
@@ -51,20 +53,14 @@ input[type='text']::placeholder {
 
 #personal-info img {
   border-radius: 50%;
-  width: 40%;
-  margin-bottom: 3vh;
-  margin-top: -2vh;
-}
-
-@media only screen and (min-width: 300px) and (max-height: 650px) {
-  #personal-info img {
-    width: 30%;
-  }
+  width: 13vw;
+  /* margin-top: -2vh; */
 }
 
 #card-name {
   margin-bottom: 0.5vh;
   font-weight: bold;
+  font-size: 2rem;
 }
 
 #card-location {
@@ -75,10 +71,7 @@ input[type='text']::placeholder {
 #card-bio {
   width: 25vw;
   font-weight: normal;
-}
-
-#personal-info h2 {
-  font-size: 2rem;
+  font-size: 1.1rem;
 }
 
 #personal-text {
@@ -87,11 +80,19 @@ input[type='text']::placeholder {
 
 #public-info {
   display: flex;
-  padding-top: 3vh;
+  /* padding-top: 3vh; */
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   font-size: 1rem;
+}
+
+#public-info h1 {
+  width: 20vw;
+  margin: 10% 30% 3vh 0;
+  border-bottom: solid #ffffff 2px;
+  font-weight: bolder;
+  font-size: 3rem;
 }
 
 .public-info-label {
@@ -99,7 +100,7 @@ input[type='text']::placeholder {
   padding: 0;
   margin-bottom: 1vh;
   font-weight: 500;
-  font-size: .8rem;
+  font-size: 1.1vw;
 }
 
 #public-info section > h3 {
@@ -108,15 +109,215 @@ input[type='text']::placeholder {
   font-size: 1.5rem;
 }
 
-#public-info h1 {
-  width: 110%;
-  margin: 10% 30% 3vh 0;
-  border-bottom: solid #ffffff 2px;
-  font-weight: bolder;
-  font-size: 3rem;
+i {
+  font-size: 1.8vw;
+  display: inline;
 }
 
-i {
-  font-size: 1.5rem;
-  display: inline;
+/* ! Media Queries */
+
+@media only screen and (max-width: 1200px) and (min-width: 961px) {
+  #public-info h1 {
+    font-size: 2.5rem;
+  }
+
+  .public-info-label {
+    font-size: 1.3rem;
+  }
+
+  #public-info section > h3 {
+    font-size: 2rem;
+  }
+
+  i {
+    font-size: 1.8rem;
+  }
+
+  #card-location {
+    font-size: 1.2rem;
+  }
+
+  #card-bio {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 960px) and (min-width: 712px) {
+  #public-info h1 {
+    font-size: 2rem;
+  }
+
+  .public-info-label {
+    font-size: 1rem;
+  }
+
+  #public-info section > h3 {
+    font-size: 1.5rem;
+  }
+
+  i {
+    font-size: 1.4rem;
+  }
+
+  #personal-info img {
+    width: 9rem;
+  }
+
+  h2 #card-name {
+    font-size: 1rem;
+  }
+
+  #card-location {
+    font-size: 1rem;
+  }
+
+  #card-bio {
+    width: 30vw;
+    font-size: 1.1rem;
+  }
+
+  input[type='text'] {
+    line-height: 3.1rem;
+    font-size: 1.7rem;
+  }
+}
+
+@media only screen and (max-width: 711px) and (min-width: 555px) {
+  .container-card {
+    width: 90vw;
+    height: 80%;
+  }
+
+  #public-info h1 {
+    font-size: 2.4rem;
+    width: 30vw;
+  }
+
+  .public-info-label {
+    font-size: 1rem;
+  }
+
+  #public-info section > h3 {
+    font-size: 1.5rem;
+  }
+
+  i {
+    font-size: 1.4rem;
+  }
+
+  #personal-info img {
+    width: 9rem;
+  }
+
+  h2 #card-name {
+    font-size: 1rem;
+  }
+
+  #card-location {
+    font-size: 1rem;
+  }
+
+  #card-bio {
+    width: 40vw;
+    font-size: 1.1rem;
+  }
+
+  input[type='text'] {
+    line-height: 3.1rem;
+    font-size: 1.7rem;
+  }
+}
+
+@media only screen and (max-width: 554px) and (min-width: 411px) {
+  .container-card {
+    width: 90vw;
+    height: 80%;
+  }
+
+  #public-info h1 {
+    font-size: 1.6rem;
+    width: 30vw;
+  }
+
+  .public-info-label {
+    font-size: 1rem;
+  }
+
+  #public-info section > h3 {
+    font-size: 1.5rem;
+  }
+
+  i {
+    font-size: 1.4rem;
+  }
+
+  #personal-info img {
+    width: 9rem;
+    margin-bottom: 3vh;
+  }
+
+  #card-name {
+    font-size: 1.5rem;
+  }
+
+  #card-location {
+    font-size: 1rem;
+  }
+
+  #card-bio {
+    width: 50vw;
+    font-size: 1.1rem;
+  }
+
+  input[type='text'] {
+    line-height: 3.1rem;
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 409px) {
+  .container-card {
+    width: 90vw;
+    height: 80%;
+  }
+
+  #public-info h1 {
+    font-size: 1.6rem;
+    width: 30vw;
+  }
+
+  .public-info-label {
+    font-size: 1rem;
+  }
+
+  #public-info section > h3 {
+    font-size: 1.2rem;
+  }
+
+  i {
+    font-size: 1.4rem;
+  }
+
+  #personal-info img {
+    width: 7rem;
+    margin-bottom: 3vh;
+  }
+
+  #card-name {
+    font-size: 1.3rem;
+  }
+
+  #card-location {
+    font-size: 1rem;
+  }
+
+  #card-bio {
+    width: 50vw;
+    font-size: 0.9rem;
+  }
+
+  input[type='text'] {
+    line-height: 3.1rem;
+    font-size: 1rem;
+  }
 }

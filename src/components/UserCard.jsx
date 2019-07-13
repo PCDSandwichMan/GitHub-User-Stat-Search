@@ -40,11 +40,11 @@ class UserCard extends Component {
           />
         </form>
         {/* User Personal Section */}
-        <div className="contianer-allInfo">
+        <div className="container-allInfo">
           <div id="personal-info">
             <img src={profilePic ? profilePic : defaultFace} alt="User profile logo" />
             <div id="personal-text">
-              <h2 id="card-name" href={pageLink}>{userName ? userName : 'Unkown Man'}</h2>
+              <h2 id="card-name" href={pageLink}>{userName ? userName : 'Unknown Man'}</h2>
               <h3 id="card-location">{userName ? userLocation : 'Oops! -- Try Again : We Could Not Find The User Your Are Looking For'}</h3>
               <h4 id="card-bio">{userBio ? userBio : null}</h4>
             </div>
