@@ -8,6 +8,7 @@
   opacity: 0.98;
   width: 65vw;
   height: 70%;
+  min-height: 550px;
   border-radius: 3%;
   border: #333 1px solid;
   overflow: hidden;
@@ -118,27 +119,37 @@ i {
 
 @media only screen and (max-width: 1200px) and (min-width: 961px) {
   #public-info h1 {
-    font-size: 2.5rem;
-  }
-
-  .public-info-label {
-    font-size: 1.3rem;
-  }
-
-  #public-info section > h3 {
     font-size: 2rem;
   }
 
-  i {
-    font-size: 1.8rem;
+  .public-info-label {
+    font-size: 1rem;
   }
 
-  #card-location {
+  #public-info section > h3 {
     font-size: 1.2rem;
   }
 
+  i {
+    font-size: 1.6rem;
+  }
+
+  #personal-info img {
+    border-radius: 50%;
+    width: 12vw;
+    /* margin-top: -2vh; */
+  }
+
+  #card-name {
+    font-size: 1.5rem;
+  }
+
+  #card-location {
+    font-size: 1.1rem;
+  }
+
   #card-bio {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 }
 
