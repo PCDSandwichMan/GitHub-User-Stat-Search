@@ -51,7 +51,7 @@ class UserCard extends Component {
           </div>
           {/* User States Section */}
           <div id="public-info">
-            <h1>User Stats</h1>
+            <h1><span id="hide-responsive">User </span>Stats</h1>
             <h6 className='public-info-label'>GitHub Score</h6>
             <section id="stars">
               <i className="fas fa-trophy"></i>
